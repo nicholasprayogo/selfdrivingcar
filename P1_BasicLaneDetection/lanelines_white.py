@@ -5,7 +5,7 @@ import os
 import math
 # import threading
 
-showstep = False
+showstep = True
 # SET TO TRUE IF WANT TO SHOW STEPS
 
 rho = 1
@@ -55,6 +55,7 @@ def gaussian_blur(img, kernel_size):
         cv2.waitKey(0)
     return blur
 
+# gaussian_blur(img, kernel_size)
 
 def canny(img, low_threshold, high_threshold):
     can = cv2.Canny(img, low_threshold, high_threshold)
